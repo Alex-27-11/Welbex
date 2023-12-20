@@ -1,0 +1,113 @@
+.header {
+	height: 55px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #0E1014;
+	@media (max-width: 768px) {
+		position: relative;
+		z-index: 5;
+	 }
+	@media (min-width: 768px) {
+		margin: 0 auto 90px;
+	 }
+	&__nav {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		width: 100%;
+		padding: 0px 0px 0px 0px;
+		@media (min-width: 768px) {
+			padding: 16px 0px 0px 0px;
+		 }
+	}
+	&__logo {
+		margin-right: percentage(52 / 1140);
+		display: none;
+		@media (min-width: 900px) {
+			display: block;
+		 }
+	}
+	&__logo-img {
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+	&__logo-text {
+		color: #E4E5EA;
+		font-family: 'Montserrat';
+		font-size: 10px;
+		font-weight: 300;
+		line-height: normal;
+		max-width: 140px;
+	}
+	&__navigate {
+		display: flex;
+		justify-content: space-between;
+		gap: 16px;
+		width: 100%;
+		padding: 3px 0px 0px 0px;
+		@media (min-width: 768px) {
+			gap: 30px;
+		 }
+		 @media (min-width: 1105px) {
+			margin-right: percentage(137 / 1140);
+			width: auto;
+		 }
+	}
+	&__navigate-item {
+		display: inline-block;
+	}
+	&__navigate-item-mobil {
+		display: none;
+		@media (min-width: 650px) {
+			display: inline-block;
+		 }
+	}
+	&__navigate-link {
+		color: #E4E5EA;
+		font-size: 12px;
+		font-weight: 500;
+		transition: all 100ms ease-out 0s;
+		&:hover {
+			background: linear-gradient(to right,rgba(252, 176, 69, 1), rgba(255, 63, 120, 1));
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		@media (min-width: 768px) {
+			font-size: 16px;
+		 }
+	}
+	&__contacts {
+		align-items: center;
+		gap: 47px;
+		display: none;
+		@media (min-width: 1105px) {
+			display: flex;
+		 }
+	}
+	&__contacts-socials {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+	}
+	&__contacts-item {
+		width: 20px;
+		height: 20px;
+		transition: all 100ms ease-out 0s;
+		svg:hover * {
+			fill:  rgba(255, 63, 120, 1);
+		}
+	}
+}
+.number {
+	color: #E4E5EA;
+	font-size: 16px;
+	font-weight: 500;
+	transition: all 100ms ease-out 0s;
+	&:hover {
+		background: linear-gradient(to right,rgba(252, 176, 69, 1), rgba(255, 63, 120, 1));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+

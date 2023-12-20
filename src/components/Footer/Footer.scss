@@ -1,0 +1,148 @@
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 45px 0px 60px 0px;
+	color: #E4E5EA;
+	line-height: normal;
+	background: #0E1014;
+	@media (max-width: 768px) {
+		position: relative;
+		z-index: 5;
+	 }
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		align-self: flex-start;
+		@media (min-width: 768px) {
+			flex-direction: row;
+			justify-content: space-between;
+			width: 100%;
+		 }
+	}
+	&__about {
+		@media (min-width: 1100px) {
+			margin-right: 58px;
+			font-size: 16px;
+		 }
+	}
+	&__about-title {
+	}
+	&__about-nav {
+	}
+	&__about-list {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+	&__about-item {
+	}
+	&__about-link {
+		color: inherit;
+	}
+	&__menu {
+		@media (min-width: 1200px) {
+			margin-right: 103px;
+			font-size: 16px;
+		 }
+	}
+	&__menu-title {
+	}
+	&__menu-nav {
+		display: flex;
+		gap: 48px;
+		@media (min-width: 768px) {
+			gap: 52px;
+		 }
+	}
+	&__menu-list {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+	&__menu-item {
+	}
+	&__menu-order1 {
+		@media (min-width: 768px) {
+			order: -1;
+		 }
+	}
+	&__menu-link {
+		color: inherit;
+	}
+	&__contacts {
+		@media (min-width: 768px) {
+			text-align: right;
+			font-size: 16px;
+		 }
+	}
+	&__contacts-title {
+	}
+	&__contacts-nav {
+		margin-bottom: 50px;
+		@media (min-width: 768px) {
+			margin-bottom: 70px;
+		 }
+	}
+	&__contacts-list {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+	&__contacts-item {
+		transition: all 100ms ease-out 0s;
+		&:hover {
+			background: linear-gradient(to right,rgba(252, 176, 69, 1), rgba(255, 63, 120, 1));
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+	&__contacts-socials-list {
+		display: flex;
+		gap: 10px;
+		@media (min-width: 768px) {
+			justify-content: end;
+		 }
+	}
+	&__contacts-socials-item {
+	}
+	&__contacts-socials-link {
+		svg:hover * {
+			fill:  rgba(255, 63, 120, 1);
+		}
+		svg {
+			@media (min-width: 768px) {
+				width: 20px;
+				height: 20px;
+			 }
+		}
+	}
+	&__contacts-link {
+		color: inherit;
+	}
+	&__copyright {
+		font-family: Montserrat;
+		font-size: 12px;
+	}
+	&__copyright-textTop {
+		margin-bottom: 5px;
+	}
+	&__copyright-textBot {
+		text-decoration-line: underline;
+	}
+}
+.footer-title {
+	color: #656566;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 0.6px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	@media (min-width: 768px) {
+		font-size: 14px;
+		letter-spacing: 0.7px;
+	 }
+}
+
